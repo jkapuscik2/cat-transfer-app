@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/files",
+            "lambdaFunction": "files",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "files",
+    "apiName": "files",
+    "functionArns": [
+        {
+            "lambdaFunction": "files"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-cat-transfer-app-demo-121440-authRole",
+        "unAuthRoleName": "amplify-cat-transfer-app-demo-121440-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "files",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

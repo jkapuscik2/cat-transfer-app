@@ -1,0 +1,41 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "S3 bucket",
+  "Parameters": {
+    "BucketName": {
+      "Type": "String",
+      "Default": "cat-transfer-bucket-12345678910"
+    },
+    "env": {
+      "Type": "String"
+    }
+  },
+  "Resources": {
+    "s3ArchiveBucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "BucketName": {
+          "Ref": "BucketName"
+        },
+        "AccessControl": "Private",
+        "LifecycleConfiguration": {
+          "Rules": [
+            {
+              "ExpirationInDays": "3",
+              "Id": "Remove archives after 3 days",
+              "Status": "Enabled",
+              "Prefix": "archives"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "BucketName": {
+      "Value": {
+        "Ref": "BucketName"
+      }
+    }
+  }
+}

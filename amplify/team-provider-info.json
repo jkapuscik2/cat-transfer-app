@@ -1,0 +1,26 @@
+{
+    "demo": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-cat-transfer-app-demo-121440-authRole",
+            "UnauthRoleArn": "arn:aws:iam::874367059529:role/amplify-cat-transfer-app-demo-121440-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::874367059529:role/amplify-cat-transfer-app-demo-121440-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-cat-transfer-app-demo-121440-deployment",
+            "UnauthRoleName": "amplify-cat-transfer-app-demo-121440-unauthRole",
+            "StackName": "amplify-cat-transfer-app-demo-121440",
+            "StackId": "arn:aws:cloudformation:eu-west-1:874367059529:stack/amplify-cat-transfer-app-demo-121440/3fd5d080-854b-11ea-bdcf-0236eb75a142",
+            "AmplifyAppId": "d1alt5savo6r3y"
+        },
+        "categories": {
+            "function": {
+                "files": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d1alt5savo6r3y",
+                    "type": "manual"
+                }
+            }
+        }
+    }
+}
